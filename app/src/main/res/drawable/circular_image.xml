@@ -1,0 +1,15 @@
+<!-- res/drawable/button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 枠線の色を赤に設定 -->
+    <stroke
+        android:width="2dp"
+    android:color="#000000" />
+
+    <!-- ボタンの背景色を透明に設定 -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- 角丸を設定 -->
+    <corners android:radius="8dp" /> <!-- 任意の角丸のサイズを設定 -->
+</shape>
