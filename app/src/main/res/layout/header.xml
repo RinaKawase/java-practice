@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/bookmark_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_bookmark_24"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/alert_icon"
+        />
+
+    <ImageButton
+        android:id="@+id/alert_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_alert_24"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toStartOf="@id/add_icon"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <ImageButton
+        android:id="@+id/add_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_person_add_alt_1_24"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toStartOf="@id/setting_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/setting_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_brightness_high_24"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
