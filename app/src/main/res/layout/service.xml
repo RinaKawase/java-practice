@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/service_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/service_accordion_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accordion_txt"
+        android:textSize="12sp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- TODO:横スクロールできるようにする -->
+    <ImageView
+        android:id="@+id/stamp_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_emoji_emotions_24"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_txt" />
+
+    <TextView
+        android:id="@+id/stamp_icon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stamp_txt"
+        android:textSize="12sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stamp_icon" />
+
+    <ImageView
+        android:id="@+id/change_style_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_format_paint_24"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/stamp_icon"
+        app:layout_constraintTop_toBottomOf="@+id/service_txt" />
+
+    <TextView
+        android:id="@+id/change_style_icon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_style_txt"
+        android:textSize="12sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/stamp_icon_txt"
+        app:layout_constraintTop_toBottomOf="@id/change_style_icon" />
+
+    <ImageView
+        android:id="@+id/gift_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_card_giftcard_24"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/change_style_icon"
+        app:layout_constraintTop_toBottomOf="@+id/service_txt" />
+
+    <TextView
+        android:id="@+id/gift_icon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gift_txt"
+        android:textSize="12sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/change_style_icon_txt"
+        app:layout_constraintTop_toBottomOf="@id/gift_icon" />
+
+    <ImageView
+        android:id="@+id/chat_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_chat_bubble_outline_24"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/gift_icon"
+        app:layout_constraintTop_toBottomOf="@+id/service_txt" />
+
+    <TextView
+        android:id="@+id/chat_icon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chat_txt"
+        android:textSize="12sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/gift_icon_txt"
+        app:layout_constraintTop_toBottomOf="@id/chat_icon" />
+
+    <ImageView
+        android:id="@+id/add_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_add_24"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/chat_icon"
+        app:layout_constraintTop_toBottomOf="@+id/service_txt" />
+
+    <TextView
+        android:id="@+id/add_icon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_txt"
+        android:textSize="12sp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/chat_icon_txt"
+        app:layout_constraintTop_toBottomOf="@id/add_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

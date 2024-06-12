@@ -7,4 +7,10 @@
     <string name="group_name_detail">ゴールデン、ジャンガリアン…</string>
     <string name="unread_badge">2</string>
     <string name="accordion_txt">すべて見る</string>
+    <string name="service">サービス</string>
+    <string name="chat_txt">オープン\nチャット</string>
+    <string name="gift_txt">HAMUギフト</string>
+    <string name="change_style_txt">着せかえ</string>
+    <string name="stamp_txt">スタンプ</string>
+    <string name="add_txt">追加</string>
 </resources>
