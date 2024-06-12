@@ -3,4 +3,8 @@
     <string name="hamster">Hamster</string>
     <string name="self_introduction">私はハムスターです</string>
     <string name="button_txt">BGMを設定</string>
+    <string name="friends_list">友だちリスト</string>
+    <string name="group_name_detail">ゴールデン、ジャンガリアン…</string>
+    <string name="unread_badge">2</string>
+    <string name="accordion_txt">すべて見る</string>
 </resources>
