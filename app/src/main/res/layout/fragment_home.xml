@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- ヘッダー -->
+    <include layout="@layout/header"
+        android:id="@+id/home_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- プロフィール -->
+    <include layout="@layout/profile"
+        android:id="@+id/home_profile"
+        app:layout_constraintTop_toTopOf="@id/home_header" />
+
+    <!-- 検索 -->
+    <include layout="@layout/search_box"
+        android:id="@+id/home_search_box"
+        app:layout_constraintTop_toBottomOf="@id/home_profile" />
+
+    <!-- 友達リスト -->
+    <include layout="@layout/friends_list"
+        android:id="@+id/home_friends_list"
+        app:layout_constraintTop_toBottomOf="@+id/home_search_box"/>
+
+    <!-- サービス -->
+    <include layout="@layout/service"
+        android:id="@+id/home_service"
+        app:layout_constraintBottom_toTopOf="@+id/home_footer"/>
+
+    <!-- フッター  -->
+    <include layout="@layout/footer"
+        android:id="@+id/home_footer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
